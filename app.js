@@ -25,7 +25,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(cors())//cho phép các domain khác gọi tới api này
 //kết nối database mongoDB
-mongoose.connect('mongodb://localhost:27017/FE2_db')
+mongoose.connect('mongodb+srv://chodenmot:o6WNUwHxmalNjXLS@api.axegq.mongodb.net/FE2_db?retryWrites=true&w=majority&appName=api')
 .then(()=>console.log('Kết nối thành công'))
 .catch((err)=>console.log('Kết nối thất bại: ', err));
 
